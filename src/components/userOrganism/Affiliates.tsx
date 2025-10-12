@@ -10,12 +10,7 @@ import { Button } from '@/components/atoms/Button';
 export function Affiliates() {
 
 
-  const Info = ({ label, value }: { label: string; value: string }) => (
-    <div>
-      <p className="text-gray-400 text-sm">{label}</p>
-      <p className="font-medium text-gray-100">{value}</p>
-    </div>
-  );
+
 
   return (
     <div className="space-y-6 p-4 sm:p-6 lg:space-y-8">

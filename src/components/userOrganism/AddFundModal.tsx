@@ -26,7 +26,7 @@ export function AddFundModal({ isOpen, onClose, onSave }: AddFundModalProps) {
     }, [isOpen]);
 
     if (!isOpen) return null;
-  
+  console.log(onSave)
 
     return (
 

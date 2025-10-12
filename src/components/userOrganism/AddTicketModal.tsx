@@ -26,7 +26,7 @@ export function AddTicketModal({ isOpen, onClose, onSave }: AddFundModalProps) {
 
   if (!isOpen) return null;
 
-
+console.log(onSave, onClose)
 
 
   return (

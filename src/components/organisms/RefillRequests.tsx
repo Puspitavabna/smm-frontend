@@ -129,18 +129,7 @@ export function RefillRequests() {
     }
   };
 
-  const handleEdit = (userId: string) => {
-    console.log('Edit user:', userId);
-    // Add edit user functionality here
-  };
-
-  const handleDelete = (userId: string) => {
-    console.log('Delete user:', userId);
-    // Add delete user functionality here
-    if (window.confirm('Are you sure you want to delete this user?')) {
-      // Implement delete functionality
-    }
-  };
+ 
 
   const handleExport = () => {
     console.log('Export users data');
@@ -251,7 +240,7 @@ export function RefillRequests() {
             </table>
           </div>
         </CardContent>
-      </Card>):<ViewDetailsPage  isOpen={isModalOpen}  onClose={handleCloseModal}  onEdit={handleEdit}  onDelete={handleDelete} />}
+      </Card>):<ViewDetailsPage  isOpen={isModalOpen}  onClose={handleCloseModal} />}
 
       {/* Order Details Modal */}
       {/* <UserDetailsModal

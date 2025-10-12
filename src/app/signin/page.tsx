@@ -47,6 +47,7 @@ export default function SigninPage() {
       }
     } catch (err) {
       setError("Something went wrong");
+      console.log(err);
     }
   };
 
@@ -151,7 +152,7 @@ export default function SigninPage() {
           </form>
 
           <p className="mt-6 text-sm text-gray-300 text-center">
-            Don't have an account?{' '}
+            Donot have an account?
             <a href="#" className="text-purple-400 hover:underline">
               Sign up
             </a>

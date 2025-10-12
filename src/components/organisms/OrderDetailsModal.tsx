@@ -13,12 +13,12 @@ interface OrderDetailsModalProps {
 }
 
 export function OrderDetailsModal({ isOpen, onClose, onSave }: OrderDetailsModalProps) {
-  const [providerName, setProviderName] = React.useState('');
-  const [apiUrl, setApiUrl] = React.useState('');
-  const [apiKey, setApiKey] = React.useState('');
-  const [status, setStatus] = React.useState('Default');
-  const [syncServices, setSyncServices] = React.useState('No');
-  const [triggerApiCheck, setTriggerApiCheck] = React.useState(false);
+  // const [providerName, setProviderName] = React.useState('');
+  // const [apiUrl, setApiUrl] = React.useState('');
+  // const [apiKey, setApiKey] = React.useState('');
+  // const [status, setStatus] = React.useState('Default');
+  // const [syncServices, setSyncServices] = React.useState('No');
+  // const [triggerApiCheck, setTriggerApiCheck] = React.useState(false);
 
   // Disable scroll when modal is open
   React.useEffect(() => {
@@ -34,12 +34,12 @@ export function OrderDetailsModal({ isOpen, onClose, onSave }: OrderDetailsModal
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const formData = new FormData();
-    formData.append('providerName', providerName);
-    formData.append('apiUrl', apiUrl);
-    formData.append('apiKey', apiKey);
-    formData.append('status', status);
-    formData.append('syncServices', syncServices);
-    formData.append('triggerApiCheck', triggerApiCheck.toString());
+    // formData.append('providerName', providerName);
+    // formData.append('apiUrl', apiUrl);
+    // formData.append('apiKey', apiKey);
+    // formData.append('status', status);
+    // formData.append('syncServices', syncServices);
+    // formData.append('triggerApiCheck', triggerApiCheck.toString());
     onSave(formData);
     onClose();
   };

@@ -121,7 +121,8 @@ export function ReportLogs() {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   const [selectedUser, setSelectedUser] = React.useState<(typeof mockUsers)[0] | null>(null);
   const [activeTab, setActiveTab] = React.useState('Activity Logs');
-
+ 
+  console.log(isModalOpen, selectedUser)
   const handleView = (userId: string) => {
     const user = mockUsers.find((u) => u.id === userId);
     if (user) {
@@ -145,17 +146,7 @@ export function ReportLogs() {
     console.log('Export users data');
   };
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setSelectedUser(null);
-  };
 
-  const tabs = [
-    { name: 'Activity Logs', content: 'abc' },
-    { name: 'System Errors', content: 'bcd' },
-    { name: 'Order Reports', content: 'cde' },
-    { name: 'Security Logs', content: 'def' },
-  ];
 
   return (
     <div className='space-y-6 p-4 sm:p-6 lg:space-y-8'>

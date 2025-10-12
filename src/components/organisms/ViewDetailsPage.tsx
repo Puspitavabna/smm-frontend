@@ -8,18 +8,15 @@ import { Card, CardContent} from '@/components/ui/card';
 interface UserDetailsModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onEdit: (userId: string) => void;
-  onDelete: (userId: string) => void;
+
 }
 
 export function ViewDetailsPage({
   isOpen,
-  onClose,
-  onEdit,
-  onDelete
+  onClose
 }: UserDetailsModalProps) {
 
-    
+    console.log(isOpen)
 
   
 

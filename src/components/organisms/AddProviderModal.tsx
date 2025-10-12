@@ -19,7 +19,6 @@ export function AddProviderModal({ isOpen, onClose, onSave }: AddProviderModalPr
     const [apiKey, setApiKey] = React.useState('');
     const [status, setStatus] = React.useState('Default');
     const [syncServices, setSyncServices] = React.useState('No');
-    const [triggerApiCheck, setTriggerApiCheck] = React.useState(false);
 
     // Disable scroll when modal is open
     React.useEffect(() => {
@@ -40,7 +39,6 @@ export function AddProviderModal({ isOpen, onClose, onSave }: AddProviderModalPr
         formData.append('apiKey', apiKey);
         formData.append('status', status);
         formData.append('syncServices', syncServices);
-        formData.append('triggerApiCheck', triggerApiCheck.toString());
         onSave(formData);
         onClose();
     };

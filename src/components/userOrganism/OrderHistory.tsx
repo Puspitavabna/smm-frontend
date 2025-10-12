@@ -117,20 +117,13 @@ const mockUsers = [
 ];
 
 export function OrderHistory() {
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
-  const [selectedUser, setSelectedUser] = React.useState<(typeof mockUsers)[0] | null>(null);
 
-console.log(isModalOpen)
-console.log(selectedUser)
   const handleExport = () => {
     console.log('Export users data');
     // Add export functionality here
   };
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setSelectedUser(null);
-  };
+  
 
   return (
     <div className='space-y-6 p-4 sm:p-6 lg:space-y-8'>
