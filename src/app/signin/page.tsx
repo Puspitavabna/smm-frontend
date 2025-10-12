@@ -29,13 +29,13 @@ export default function SigninPage() {
 
       // ✅ Store token
       localStorage.setItem("token", data?.access_token);
+      localStorage.setItem("user", JSON.stringify(data?.user));
+
 
       // ✅ Redirect
       router.push("/dashboard");
 
       // ✅ Save token and user info
-      localStorage.setItem("token", data?.access_token);
-      localStorage.setItem("user", JSON.stringify(data?.user));
 
       // ✅ Redirect based on role
       if (data?.user?.role === "admin") {
