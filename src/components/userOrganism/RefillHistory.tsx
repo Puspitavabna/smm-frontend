@@ -142,7 +142,7 @@ export function RefillHistory() {
             {/* Header */}
             <div className='flex items-center justify-between'>
                 <Typography variant='h4' className='font-semibold text-foreground'>
-                    Subscriptions
+                    Refill History
                 </Typography>
                 <Button onClick={handleExport} className='bg-purple-600 hover:bg-purple-700 text-white'>
                     <Download className='mr-2 h-4 w-4' />
