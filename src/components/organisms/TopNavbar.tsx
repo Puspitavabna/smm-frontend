@@ -5,17 +5,19 @@ import { cn } from '@/lib/utils';
 import { Typography } from '@/components/atoms/Typography';
 import { Button } from '@/components/atoms/Button';
 import { Input } from '@/components/ui/input';
-import { Search, Bell, Settings, Menu, Calendar, ChevronDown } from 'lucide-react';
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator } from '@/components/ui/dropdown-menu';
+import { Search, Bell, Settings, Menu, Calendar, ChevronDown, LogOut, User } from 'lucide-react';
 import { ThemeToggle } from '@/components/molecules/ThemeToggle';
 import { useAuth } from "@/context/AuthContext";
-import { LogOut } from "lucide-react";
+
 interface TopNavbarProps {
   onMenuToggle: () => void;
   pageTitle?: string;
 }
 
 export function TopNavbar({ onMenuToggle, pageTitle = 'Dashboard' }: TopNavbarProps) {
-    const { user, logout } = useAuth();
+  const { user, logout } = useAuth();
+
   return (
     <header className='fixed top-0 right-0 left-0 z-40 border-b border-border bg-card lg:left-64'>
       <div className='flex h-16 items-center justify-between px-4 lg:px-6'>
@@ -80,21 +82,31 @@ export function TopNavbar({ onMenuToggle, pageTitle = 'Dashboard' }: TopNavbarPr
             <Settings className='h-5 w-5' />
           </Button>
 
-          {/* Profile */}
-          <div className='flex items-center space-x-2 lg:space-x-3'>
-            <div className='flex h-8 w-8 items-center justify-center rounded-full bg-foreground/10 dark:bg-gradient-to-r dark:from-pink-500 dark:to-purple-500'>
-              <span className='text-sm font-semibold text-foreground dark:text-white'>U</span>
-            </div>
-           
-          </div>
+          {/* Profile Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <div className='flex items-center space-x-2 lg:space-x-3 cursor-pointer'>
+                <div className='flex h-8 w-8 items-center justify-center rounded-full bg-foreground/10 dark:bg-gradient-to-r dark:from-pink-500 dark:to-purple-500'>
+                  <span className='text-sm font-semibold text-foreground dark:text-white'>
+                    {user?.name?.[0]?.toUpperCase() || 'U'}
+                  </span>
+                </div>
+              </div>
+            </DropdownMenuTrigger>
 
-           {/* Logout Button */}
-          <button
-            onClick={logout}
-            className="flex items-center gap-2 text-sm text-red-500 hover:text-red-700"
-          >
-            <LogOut className="h-4 w-4" /> Logout
-          </button>
+            <DropdownMenuContent align='end' className='w-40'>
+              <DropdownMenuItem className='flex items-center gap-2 cursor-default'>
+                <User className='h-4 w-4' /> {user?.name || 'User'}
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem
+                onClick={logout}
+                className='flex items-center gap-2 text-red-500 hover:text-red-700 focus:text-red-700 cursor-pointer'
+              >
+                <LogOut className='h-4 w-4' /> Logout
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
     </header>

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function SigninPage() {
+export default function SignupPage() {
   const router = useRouter();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -152,7 +152,7 @@ export default function SigninPage() {
 
           <p className="mt-6 text-sm text-gray-300 text-center">
             Don't have an account?{' '}
-            <a href="#" className="text-purple-400 hover:underline">
+            <a href="/signup" className="text-purple-400 hover:underline">
               Sign up
             </a>
           </p>
