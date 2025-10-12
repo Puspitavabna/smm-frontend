@@ -22,7 +22,6 @@ export default function SigninPage() {
       const data = await res.json();
       console.log(data);
       console.log(error);
-      debugger
       if (!res.ok) {
         setError(data.message || "Login failed");
         return;
