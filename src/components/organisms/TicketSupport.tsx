@@ -73,8 +73,8 @@ export function TicketSupport() {
                   <div className="flex flex-col items-start">
                     <div className="bg-purple-700/30 text-gray-100 px-4 py-3 rounded-2xl rounded-bl-none max-w-[85%] sm:max-w-[55%] md:max-w-[45%]">
                       <p>
-                        I'm having trouble accessing my account. I've tried resetting my password,
-                        but I'm not receiving the reset email. Can you please help?
+                       {` I'm having trouble accessing my account. I've tried resetting my password,
+                        but I'm not receiving the reset email. Can you please help?`}
                       </p>
                     </div>
                     <span className="text-xs text-gray-400 mt-1 ml-1">Emily Carter • 10:00 AM</span>
@@ -86,9 +86,9 @@ export function TicketSupport() {
                   <div className="flex flex-col items-end">
                     <div className="bg-purple-600/40 px-4 py-3 rounded-2xl rounded-br-none text-gray-100 max-w-[85%] sm:max-w-[55%] md:max-w-[45%]">
                       <p>
-                        Hi Emily, I'm sorry to hear you're having trouble. I've checked your account,
+                        {`Hi Emily, I'm sorry to hear you're having trouble. I've checked your account,
                         and it seems there might be an issue with the email address on file.
-                        Could you please confirm the email you're trying to use?
+                        Could you please confirm the email you're trying to use?`}
                       </p>
                     </div>
                     <span className="text-xs text-gray-400 mt-1 mr-1 text-right">Sarah Miller • 10:05 AM</span>
@@ -110,8 +110,8 @@ export function TicketSupport() {
                   <div className="flex flex-col items-start">
                     <div className="bg-purple-700/30 text-gray-100 px-4 py-3 rounded-2xl rounded-bl-none max-w-[85%] sm:max-w-[55%] md:max-w-[45%]">
                       <p>
-                        Yes, it's emily.carter@email.com. I've been using this email for years,
-                        so I'm not sure why it's not working.
+                     {`   Yes, it's emily.carter@email.com. I've been using this email for years,
+                        so I'm not sure why it's not working.`}
                       </p>
                     </div>
                     <span className="text-xs text-gray-400 mt-1 ml-1">Emily Carter • 10:10 AM</span>
@@ -123,9 +123,9 @@ export function TicketSupport() {
                   <div className="flex flex-col items-end">
                     <div className="bg-purple-600/40 px-4 py-3 rounded-2xl rounded-br-none text-gray-100 max-w-[85%] sm:max-w-[55%] md:max-w-[45%]">
                       <p>
-                        Thank you for confirming. I've updated your email address in our system.
+                        {`Thank you for confirming. I've updated your email address in our system.
                         Please try resetting your password again and let me know if you still
-                        don't receive the email.
+                        don't receive the email.`}
                       </p>
                     </div>
                     <span className="text-xs text-gray-400 mt-1 mr-1 text-right">Sarah Miller • 10:15 AM</span>
