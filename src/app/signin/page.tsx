@@ -29,7 +29,7 @@ export default function SigninPage() {
 
       // ✅ Store token
       localStorage.setItem("token", data?.access_token);
-      localStorage.setItem("user", JSON.stringify(data?.user));
+      localStorage.setItem("data", JSON.stringify(data));
 
 
       // ✅ Redirect
