@@ -123,37 +123,9 @@ export function TicketSupport() {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   const [selectedUser, setSelectedUser] = React.useState<(typeof mockUsers)[0] | null>(null);
 
-  const handleView = (userId: string) => {
-    const user = mockUsers.find((u) => u.id === userId);
-    if (user) {
-      setSelectedUser(user);
-      setIsModalOpen(true);
-    }
-  };
-
-  const handleEdit = (userId: string) => {
-    console.log('Edit user:', userId);
-    // Add edit user functionality here
-  };
-
-  const handleDelete = (userId: string) => {
-    console.log('Delete user:', userId);
-    // Add delete user functionality here
-    if (window.confirm('Are you sure you want to delete this user?')) {
-      // Implement delete functionality
-    }
-  };
-
-  const handleExport = () => {
-    console.log('Export users data');
-    // Add export functionality here
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setSelectedUser(null);
-  };
-
+ 
+console.log(selectedUser);
+console.log(isModalOpen)
   return (
     <div className='space-y-6 p-4 sm:p-6 lg:space-y-8'>
 

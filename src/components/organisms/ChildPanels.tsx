@@ -121,7 +121,8 @@ const mockUsers = [
 export function ChildPanels() {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   const [selectedUser, setSelectedUser] = React.useState<(typeof mockUsers)[0] | null>(null);
-
+  console.log(selectedUser)
+   console.log(isModalOpen)
   const handleView = (userId: string) => {
     const user = mockUsers.find((u) => u.id === userId);
     if (user) {
@@ -148,10 +149,7 @@ export function ChildPanels() {
     // Add export functionality here
   };
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setSelectedUser(null);
-  };
+ 
 
   return (
     <div className='space-y-6 p-4 sm:p-6 lg:space-y-8'>

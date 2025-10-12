@@ -14,11 +14,9 @@ import {
   Database,
   Zap,
   UserCheck,
-  PanelLeft,
   Undo2,
   Megaphone,
   BarChart3,
-  Menu,
   X
 } from 'lucide-react';
 import { Button } from '@/components/atoms/Button';

@@ -126,7 +126,7 @@ export function Providers() {
   const handleView = () => {
       setIsModalOpen(true);
   };
-
+ console.log(selectedUser)
   const handleEdit = (userId: string) => {
     console.log('Edit user:', userId);
     // Add edit user functionality here

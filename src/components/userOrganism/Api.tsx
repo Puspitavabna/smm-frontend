@@ -2,56 +2,9 @@
 
 import * as React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/atoms/Button';
-import { Typography } from '@/components/atoms/Typography';
-import { Badge } from '@/components/ui/badge';
-import { Avatar } from '@/components/ui/avatar';
-import { Eye, Edit2, Trash2, Download } from 'lucide-react';
-import { UserDetailsModal } from '@/components/organisms/UserDetailsModal';
-
-// Mock user data
-const mockUsers = [
-  {
-    id: '6758',
-    image: '/api/placeholder/40/40',
-    name: 'Nichole Volkman',
-    email: 'abc@gmail.com',
-    phone: '0340 9876543',
-    balance: '$1,250.00',
-    totalOrders: '47',
-    status: 'Active',
-    joinDate: '07/05/2018',
-    lastLogin: '2 hours ago',
-    ticketsSubmitted: '3',
-    password: '••••••••',
-    address: '1615 Swaniawski Neck, Provo',
-  },
-  // ... (other mock users remain unchanged)
-];
-
-
 
 export function Api() {
-  const [selectedUser, setSelectedUser] = React.useState<(typeof mockUsers)[0] | null>(null);
-  const [apiKey, setApiKey] = React.useState('');
 
-  const handleEdit = (userId: string) => {
-    console.log('Edit user:', userId);
-    // Add edit user functionality here
-  };
-
-  const handleDelete = (userId: string) => {
-    console.log('Delete user:', userId);
-    // Add delete user functionality here
-    if (window.confirm('Are you sure you want to delete this user?')) {
-      // Implement delete functionality
-    }
-  };
-
-  const handleExport = () => {
-    console.log('Export users data');
-    // Add export functionality here
-  };
 
   const Info = ({ label, value }: { label: string; value: string }) => (
     <div>

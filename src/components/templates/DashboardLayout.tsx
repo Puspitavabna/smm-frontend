@@ -24,7 +24,6 @@ import { BroadcastMessage } from '@/components/organisms/BroadcastMessage';
 // } from '@/components/organisms/PlaceholderPages';
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
-import { useEffect } from 'react';
 type CurrentPage =
   | 'dashboard'
   | 'manage-users'
@@ -42,8 +41,7 @@ type CurrentPage =
   | 'reports';
 
 export function DashboardLayout() {
-  const { user } = useAuth();
-  const router = useRouter();
+
 
   // useEffect(() => {
   //   if (!user) {

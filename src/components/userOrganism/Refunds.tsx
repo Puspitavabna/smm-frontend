@@ -1,13 +1,11 @@
 'use client';
 
 import * as React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent} from '@/components/ui/card';
 import { Button } from '@/components/atoms/Button';
 import { Typography } from '@/components/atoms/Typography';
 import { Badge } from '@/components/ui/badge';
-import { Avatar } from '@/components/ui/avatar';
-import { Eye, Edit2, Trash2, Download } from 'lucide-react';
-import { UserDetailsModal } from '@/components/organisms/UserDetailsModal';
+import { Download } from 'lucide-react';
 import { OrderDetailsModal } from '../organisms/OrderDetailsModal';
 
 // Mock user data
@@ -122,23 +120,12 @@ const mockUsers = [
 export function Refunds() {
     const [isModalOpen, setIsModalOpen] = React.useState(false);
     const [selectedUser, setSelectedUser] = React.useState<(typeof mockUsers)[0] | null>(null);
-
+    console.log(selectedUser)
     const handleView = () => {
             setIsModalOpen(true);
     };
 
-    const handleEdit = (userId: string) => {
-        console.log('Edit user:', userId);
-        // Add edit user functionality here
-    };
 
-    const handleDelete = (userId: string) => {
-        console.log('Delete user:', userId);
-        // Add delete user functionality here
-        if (window.confirm('Are you sure you want to delete this user?')) {
-            // Implement delete functionality
-        }
-    };
 
     const handleExport = () => {
         console.log('Export users data');

@@ -5,7 +5,6 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/atoms/Button';
 import { Typography } from '@/components/atoms/Typography';
 import { X } from 'lucide-react';
-import { Input } from '@/components/ui/input';
 
 interface OrderDetailsModalProps {
   isOpen: boolean;
@@ -45,10 +44,7 @@ export function OrderDetailsModal({ isOpen, onClose, onSave }: OrderDetailsModal
     onClose();
   };
 
-  const handleTestConnection = () => {
-    console.log('Testing connection with:', { apiUrl, apiKey });
-    // Implement connection test logic here
-  };
+
 
   return (
     <>

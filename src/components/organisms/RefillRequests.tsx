@@ -1,13 +1,11 @@
 'use client';
 
 import * as React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/atoms/Button';
 import { Typography } from '@/components/atoms/Typography';
 import { Badge } from '@/components/ui/badge';
-import { Avatar } from '@/components/ui/avatar';
-import { Eye, Edit2, Trash2, Download } from 'lucide-react';
-import { UserDetailsModal } from '@/components/organisms/UserDetailsModal';
+import { Download } from 'lucide-react';
 import { ViewDetailsPage } from './ViewDetailsPage';
 
 // Mock user data
@@ -122,7 +120,7 @@ const mockUsers = [
 export function RefillRequests() {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   const [selectedUser, setSelectedUser] = React.useState<(typeof mockUsers)[0] | null>(null);
-
+  console.log(selectedUser);
   const handleView = (userId: string) => {
     const user = mockUsers.find((u) => u.id === userId);
     if (user) {

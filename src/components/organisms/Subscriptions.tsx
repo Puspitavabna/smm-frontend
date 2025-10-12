@@ -121,14 +121,8 @@ const mockUsers = [
 export function Subscriptions() {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   const [selectedUser, setSelectedUser] = React.useState<(typeof mockUsers)[0] | null>(null);
-
-  const handleView = (userId: string) => {
-    const user = mockUsers.find((u) => u.id === userId);
-    if (user) {
-      setSelectedUser(user);
-      setIsModalOpen(true);
-    }
-  };
+   console.log(selectedUser)
+   console.log(isModalOpen)
 
   const handleEdit = (userId: string) => {
     console.log('Edit user:', userId);
@@ -148,10 +142,7 @@ export function Subscriptions() {
     // Add export functionality here
   };
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setSelectedUser(null);
-  };
+
 
   return (
     <div className='space-y-6 p-4 sm:p-6 lg:space-y-8'>

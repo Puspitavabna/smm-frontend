@@ -10,11 +10,7 @@ import { Services } from '@/components/userOrganism/Services';
 import { OrderHistory } from '@/components/userOrganism/OrderHistory';
 import { Subscription } from '@/components/userOrganism/Subscription';
 import { Affiliates } from '@/components/userOrganism/Affiliates';
-import { Providers } from '@/components/organisms/Providers';
-import { ServiceCategories } from '@/components/organisms/ServiceCategories';
-import { RefundRequests } from '@/components/organisms/RefundRequests';
-import { ReportLogs } from '@/components/organisms/ReportLogs';
-import { BroadcastMessage } from '@/components/organisms/BroadcastMessage';
+
 // import {
 //   ManualPayments,
 //   ProvidersAPI,
@@ -22,7 +18,6 @@ import { BroadcastMessage } from '@/components/organisms/BroadcastMessage';
 // } from '@/components/organisms/PlaceholderPages';
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
-import { useEffect } from 'react';
 import { RefillHistory } from '../userOrganism/RefillHistory';
 import { FundDetails } from '../userOrganism/FundDetails';
 import { TicketSupport } from '../userOrganism/TicketSupport';
@@ -47,8 +42,7 @@ type CurrentPage =
   | 'api';
 
 export function UserDashboardLayout() {
-  const { user } = useAuth();
-  const router = useRouter();
+
 
   // useEffect(() => {
   //   if (!user) {

@@ -1,50 +1,14 @@
 'use client';
 
 import * as React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent} from '@/components/ui/card';
 import { Button } from '@/components/atoms/Button';
-import { Typography } from '@/components/atoms/Typography';
-import { Badge } from '@/components/ui/badge';
-import { Avatar } from '@/components/ui/avatar';
-import { Eye, Edit2, Trash2, Download } from 'lucide-react';
-import { UserDetailsModal } from '@/components/organisms/UserDetailsModal';
-
-interface ViewDetailsPageProps {
-  isOpen: boolean;
-  onClose: () => void;
-  onEdit: (userId: string) => void;
-  onDelete: (userId: string) => void;
-}
 
 export function BulkOrder() {
 
   // Mock user data
 
 
-  const handleEdit = (userId: string) => {
-    console.log('Edit user:', userId);
-    // Add edit user functionality here
-  };
-
-  const handleDelete = (userId: string) => {
-    console.log('Delete user:', userId);
-    // Add delete user functionality here
-    if (window.confirm('Are you sure you want to delete this user?')) {
-      // Implement delete functionality
-    }
-  };
-
-  const handleExport = () => {
-    console.log('Export users data');
-    // Add export functionality here
-  };
-
-  const Info = ({ label, value }: { label: string; value: string }) => (
-    <div>
-      <p className="text-gray-400 text-sm">{label}</p>
-      <p className="font-medium text-gray-100">{value}</p>
-    </div>
-  );
 
   return (
     <div className="space-y-6 p-4 sm:p-6 lg:space-y-8">
