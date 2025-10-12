@@ -38,9 +38,9 @@ export default function SigninPage() {
       // ✅ Save token and user info
 
       // ✅ Redirect based on role
-      if (data?.user?.role === "admin") {
+      if (data?.role === "admin") {
         router.push("/admin/dashboard");
-      } else if (data?.user?.role === "user") {
+      } else if (data?.role === "user") {
         router.push("/user/dashboard");
       } else {
         router.push("/dashboard"); // fallback
