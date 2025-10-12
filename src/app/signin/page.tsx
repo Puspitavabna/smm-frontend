@@ -13,42 +13,37 @@ export default function SigninPage() {
     e.preventDefault();
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/login`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password }),
-      });
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/login`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ username, password }),
+  });
 
-      const data = await res.json();
-      console.log(data);
-      console.log(error);
-      if (!res.ok) {
-        setError(data.message || "Login failed");
-        return;
-      }
+  // Check if response is ok BEFORE parsing JSON
+  if (!res.ok) {
+   setError( "Login failed"); return;
+  }
 
-      // ✅ Store token
-      localStorage.setItem("token", data?.access_token);
-      localStorage.setItem("data", JSON.stringify(data));
+  const data = await res.json(); // safe to parse now
+  console.log("Login data:", data);
 
+  // Store token and user info
+  localStorage.setItem("token", data?.access_token);
+  localStorage.setItem("user", JSON.stringify(data));
 
-      // ✅ Redirect
-      router.push("/dashboard");
+  // Redirect based on role
+  if (data?.role === "admin") {
+    router.push("/admin/dashboard");
+  } else if (data?.role === "user") {
+    router.push("/user/dashboard");
+  } else {
+    router.push("/dashboard");
+  }
 
-      // ✅ Save token and user info
-
-      // ✅ Redirect based on role
-      if (data?.role === "admin") {
-        router.push("/admin/dashboard");
-      } else if (data?.role === "user") {
-        router.push("/user/dashboard");
-      } else {
-        router.push("/dashboard"); // fallback
-      }
-    } catch (err) {
-      setError("Something went wrong");
-      console.log(err);
-    }
+} catch (err) {
+  console.error("Login error:", err);
+  setError("Something went wrong");
+}
   };
 
   return (
