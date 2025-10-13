@@ -2,6 +2,7 @@
 import React from "react";
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import Link from "next/link";
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
   return (
@@ -12,10 +13,10 @@ const Navbar = () => {
 
         {/* Center - Nav Links (Desktop) */}
         <div className="hidden md:flex space-x-8 absolute left-1/2 transform -translate-x-1/2">
-          <a href="#" className="text-gray-300 hover:text-white transition-colors">Home</a>
-          <a href="#" className="text-gray-300 hover:text-white transition-colors">About Us</a>
-          <a href="#" className="text-gray-300 hover:text-white transition-colors">Services</a>
-          <a href="#" className="text-gray-300 hover:text-white transition-colors">Contact Us</a>
+          <Link href="/" className="text-gray-300 hover:text-white transition-colors">Home</Link>
+          <Link href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link>
+          <Link href="/services" className="text-gray-300 hover:text-white transition-colors">Services</Link>
+          <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact Us</Link>
         </div>
 
         {/* Right - Register Button (Desktop) */}

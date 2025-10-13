@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="py-10 bg-gradient-to-b from-purple-900 via-black to-purple-900 text-white relative overflow-hidden">
+    <footer className="py-10 bg-[#0f0f1f]  text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="bg-white/10 backdrop-blur-sm border border-white/10 shadow-lg p-6 rounded-lg grid grid-cols-1 md:grid-cols-4 gap-8 relative clip-path-polygon">
+        <div className="bg-white/8 backdrop-blur-sm border border-white/10 shadow-lg p-6 rounded-lg grid grid-cols-1 md:grid-cols-4 gap-8 relative ">
           {/* UHQ SMM Section */}
           <div className="text-center md:text-left">
             <h3 className="text-xl font-semibold text-purple-400 mb-4">UHQ SMM</h3>
