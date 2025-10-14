@@ -41,8 +41,8 @@ const Contact = () => {
             <div className="bg-gradient-to-b from-purple-900 to-black text-white p-10 min-h-screen flex items-center justify-center">
                 <div className="w-full max-w-4xl">
                     <h1 className="text-4xl font-bold text-center mb-6">Get in Touch With Our Support Team</h1>
-                    <p className="text-center mb-8 text-gray-300">
-                        Have a question or need help? Our team is available 24/7!<br /> Contact us and get your answers fast. Let's connect!
+                    <p className="text-center mb-8 text-gray-300">{`
+                        Have a question or need help? Our team is available 24/7!<br /> Contact us and get your answers fast. Let's connect!`}
                     </p>
 
                     <form className="bg-gray-800 p-6 rounded-lg shadow-lg grid grid-cols-1 md:grid-cols-2 gap-4">
