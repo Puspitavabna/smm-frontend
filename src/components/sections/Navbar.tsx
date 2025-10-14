@@ -1,15 +1,24 @@
 "use client";
 import React from "react";
 import { Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Link from "next/link";
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    // Get user from localStorage
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
   return (
     <nav className=" text-white px-6  relative">
       <div className="flex items-center justify-between">
         {/* Left - Logo */}
-        <div className="text-2xl font-bold text-purple-400">UHQ SMM</div>
+        <div className="text-2xl font-bold text-purple-500">UHQ <span className="text-white">SMM</span></div>
 
         {/* Center - Nav Links (Desktop) */}
         <div className="hidden md:flex space-x-8 absolute left-1/2 transform -translate-x-1/2">
@@ -20,9 +29,11 @@ const Navbar = () => {
         </div>
 
         {/* Right - Register Button (Desktop) */}
-        <button className="hidden md:block bg-purple-600 px-6 py-2 rounded-full hover:bg-purple-700 transition-all">
-          Register
-        </button>
+        <Link href="/signup" passHref>
+          <button className="hidden md:block bg-purple-600 px-6 py-2 rounded-full hover:bg-purple-700 transition-all">
+            Register
+          </button>
+        </Link>
 
         {/* Mobile Menu Toggle */}
         <button
@@ -36,13 +47,16 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden mt-4 bg-gray-800 rounded-lg shadow-lg p-4 space-y-4">
-          <a href="#" className="block text-gray-300 hover:text-white transition-colors">Home</a>
-          <a href="#" className="block text-gray-300 hover:text-white transition-colors">About Us</a>
-          <a href="#" className="block text-gray-300 hover:text-white transition-colors">Services</a>
-          <a href="#" className="block text-gray-300 hover:text-white transition-colors">Contact Us</a>
-          <button className="w-full bg-purple-600 px-6 py-2 rounded-full hover:bg-purple-700 transition-all">
-            Register
-          </button>
+          <Link href="/" className="block text-gray-300 hover:text-white transition-colors">Home</Link>
+          <Link href="/about" className="block text-gray-300 hover:text-white transition-colors">About Us</Link>
+          <Link href="/services" className="block text-gray-300 hover:text-white transition-colors">Services</Link>
+          <Link href="/contact" className="block text-gray-300 hover:text-white transition-colors">Contact Us</Link>
+
+          <Link href="/signup" passHref>
+            <button className="w-full bg-purple-600 px-6 py-2 rounded-full hover:bg-purple-700 transition-all">
+              Register
+            </button>
+          </Link>
         </div>
       )}
     </nav>
