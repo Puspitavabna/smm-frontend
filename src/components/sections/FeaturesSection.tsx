@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const FeaturesSection = () => {
     return (
         <section className="bg-[#0f0f1f] py-16">
@@ -7,10 +7,12 @@ const FeaturesSection = () => {
 
                 {/* Left Side - Image */}
                 <div className="flex-1">
-                    <img
+                    <Image
                         src="/path-to-your-image.png" // replace with your uploaded image path
                         alt="SMM Panel"
                         className="w-full h-auto rounded-lg"
+                        width={150}
+                        height={150}
                     />
                 </div>
 

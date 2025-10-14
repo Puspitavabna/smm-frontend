@@ -1,9 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Navbar from "../../components/sections/Navbar";
-import StatsSection from "@/components/sections/StatsSection";
 import Footer from "@/components/sections/Footer";
-import ToolsSection from "@/components/sections/ToolSection";
 import ToolSection from "@/components/sections/ToolSection";
 const Services = () => {
     return (
@@ -86,7 +84,7 @@ const Services = () => {
             <div className="bg-gradient-to-b from-purple-900 to-black text-white p-10">
                 <h1 className="text-4xl font-bold text-center mb-4">Premium Social Media Accounts for Every Need</h1>
                 <p className="text-center mb-8 text-gray-300 ">
-                    Explore a curated selection of high-quality, aged, <br/>and verified social media accounts tailored for businesses, agencies, and individual creators.<br/> Whether you're scaling ad campaigns, automating growth, or building brand presence.
+                    {`Explore a curated selection of high-quality, aged, <br/>and verified social media accounts tailored for businesses, agencies, and individual creators.<br/> Whether you're scaling ad campaigns, automating growth, or building brand presence.`}
                 </p>
                 <div className="px-4 py-10 ">
                     <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">

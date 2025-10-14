@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Navbar from "../../components/sections/Navbar";
-import StatsSection from "@/components/sections/StatsSection";
 import Footer from "@/components/sections/Footer";
 const Contact = () => {
     return (
@@ -20,7 +19,7 @@ const Contact = () => {
                                 Get in Touch With <br />Our Support Team
                             </h1>
                             <p className="text-gray-200 mb-8 text-lg">
-                                Take your social media to the next level with proven growth tools, authentic engagement, and a powerful online presence that sets you apart from the competition and drives real results.
+                             {`   Take your social media to the next level with proven growth tools, authentic engagement, and a powerful online presence that sets you apart from the competition and drives real results.`}
                             </p>
                             {/* Buttons */}
 

@@ -8,7 +8,7 @@ export default function SigninPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-
+  console.log(error)
   const handleSignin = async (e: React.FormEvent) => {
     e.preventDefault();
 

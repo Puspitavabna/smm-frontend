@@ -14,7 +14,7 @@ const ResellerSection = () => {
                             Empowering Resellers with the Fastest and Most Reliable SMM Panel
                         </h1>
                         <p className="text-gray-300 mb-8 text-lg">
-                            Discover unparalleled convenience and excellence in social media marketing with SMM VIP. The industry's foremost SMM panel for resellers. Our platform offers a seamless experience, providing access to premium services and tools tailored to elevate your SMM ventures.
+                           {` Discover unparalleled convenience and excellence in social media marketing with SMM VIP. The industry's foremost SMM panel for resellers. Our platform offers a seamless experience, providing access to premium services and tools tailored to elevate your SMM ventures.`}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <button className="bg-purple-600 px-8 py-3 rounded-lg text-lg font-medium hover:bg-purple-700 transition-all shadow-lg hover:shadow-purple-500/30 w-full sm:w-auto">

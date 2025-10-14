@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '../ui/button';
-
+import Image from 'next/image';
 const ToolsSection = () => {
     return (
         // <section className="py-20 bg-gradient-to-b from-purple-900 via-black to-purple-900 text-white relative overflow-hidden">
@@ -56,10 +56,12 @@ const ToolsSection = () => {
                     <div className="absolute inset-0 bg-white/20 rounded-lg"></div>
 
                     {/* Image */}
-                    <img
+                    <Image
                         src="/icons.png" // replace with your uploaded image path
                         alt="SMM Panel"
-                        className="w-full h-auto rounded-lg relative z-10"
+                        className="w-full h-auto rounded-lg"
+                        width={30}
+                        height={30}
                     />
                 </div>
 

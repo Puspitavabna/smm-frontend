@@ -1,5 +1,4 @@
 import React from "react";
-import { FaUserPlus, FaBullseye, FaChartLine } from "react-icons/fa";
 import { Button } from "../atoms/Button";
 
 
@@ -18,7 +17,7 @@ const Benefits = () => {
             <div className="text-4xl mb-4 text-purple-400">💎</div>
             <h3 className="text-xl font-semibold mb-2">Quality</h3>
             <p className="text-gray-300 text-sm">
-              Experience excellence with our high-quality SMM services. As SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.
+             {` Experience excellence with our high-quality SMM services. As SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}
             </p>
           </div>
 
@@ -27,7 +26,7 @@ const Benefits = () => {
             <div className="text-4xl mb-4 text-purple-400">💡</div>
             <h3 className="text-xl font-semibold mb-2">Affordability</h3>
             <p className="text-gray-300 text-sm">
-              Affordability with our high-quality SMM services. As SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.
+            {`  Affordability with our high-quality SMM services. As SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}
             </p>
           </div>
 
@@ -36,7 +35,7 @@ const Benefits = () => {
             <div className="text-4xl mb-4 text-purple-400">⏱️</div>
             <h3 className="text-xl font-semibold mb-2">Speed</h3>
             <p className="text-gray-300 text-sm">
-              Speed excellence with our high-quality SMM services. As SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.
+              {`Speed excellence with our high-quality SMM services. As SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}
             </p>
           </div>
 
@@ -45,7 +44,7 @@ const Benefits = () => {
             <div className="text-4xl mb-4 text-purple-400">👆</div>
             <h3 className="text-xl font-semibold mb-2">Usability</h3>
             <p className="text-gray-300 text-sm">
-              Usability excellence with our high-quality SMM services. As SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.
+              {`Usability excellence with our high-quality SMM services. As SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}
             </p>
           </div>
         </div>
