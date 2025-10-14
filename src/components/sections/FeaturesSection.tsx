@@ -11,8 +11,8 @@ const FeaturesSection = () => {
                         src="/path-to-your-image.png" // replace with your uploaded image path
                         alt="SMM Panel"
                         className="w-full h-auto rounded-lg"
-                        width={150}
-                        height={150}
+                        width={80}
+                        height={80}
                     />
                 </div>
 
