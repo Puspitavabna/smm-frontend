@@ -60,8 +60,8 @@ const ToolsSection = () => {
                         src="/icons.png" // replace with your uploaded image path
                         alt="SMM Panel"
                         className="w-full h-auto rounded-lg"
-                        width={30}
-                        height={30}
+                        width={300}
+                        height={400}
                     />
                 </div>
 

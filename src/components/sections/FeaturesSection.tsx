@@ -8,11 +8,11 @@ const FeaturesSection = () => {
                 {/* Left Side - Image */}
                 <div className="flex-1">
                     <Image
-                        src="/path-to-your-image.png" // replace with your uploaded image path
-                        alt="SMM Panel"
-                        className="w-full h-auto rounded-lg"
-                        width={80}
-                        height={80}
+                        src="/about.png" // Update this path to your monitor image
+                        alt="SMM Dashboard"
+                        width={500}
+                        height={400}
+                        className="rounded-xl"
                     />
                 </div>
 
