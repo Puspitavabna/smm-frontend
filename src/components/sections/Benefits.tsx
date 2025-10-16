@@ -1,59 +1,54 @@
 import React from "react";
-import { Button } from "../atoms/Button";
-
-
-
+import Ball2 from '../../app/assets/Section5ball.png'
+import Dots from '../../app/assets/dots.png'
+import Section5 from '../../app/assets/section5.png'
+import Section5Img1 from '../../app/assets/section5img1.png'
+import Section5Img2 from '../../app/assets/section5img2.png'
+import Section5Img3 from '../../app/assets/section5img3.png'
+import Image from "next/image";
 const Benefits = () => {
-    return (
-       <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        <Button className="px-4 py-2 bg-gray-900/60 border border-purple-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500">Why Choose us</Button>
-        <h2 className="text-2xl md:text-2xl font-extrabold mb-12 py-3">
-          The Benefits of Choosing <br /> Our Advanced SMM Panel Services
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Quality Card */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center border border-white/10 shadow-lg hover:shadow-purple-500/30 transition-shadow">
-            <div className="text-4xl mb-4 text-purple-400">💎</div>
-            <h3 className="text-xl font-semibold mb-2">Quality</h3>
-            <p className="text-gray-300 text-sm">
-             {` Experience excellence with our high-quality SMM services. As SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}
-            </p>
-          </div>
+  return (
+    <div className="section5">
+      <button className="section5">Why Choose Us</button>
+      <h1 className="section5">
+        The Benefits of Choosing Our  Advanced SMM Panel Services
+        <Image src={Ball2} alt="ball2" className='ball2' />
+        <Image src={Dots} alt="dots" className='dots' />
+      </h1>
 
-          {/* Affordability Card */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center border border-white/10 shadow-lg hover:shadow-purple-500/30 transition-shadow">
-            <div className="text-4xl mb-4 text-purple-400">💡</div>
-            <h3 className="text-xl font-semibold mb-2">Affordability</h3>
-            <p className="text-gray-300 text-sm">
-            {`  Affordability with our high-quality SMM services. As SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}
-            </p>
-          </div>
-
-          {/* Speed Card */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center border border-white/10 shadow-lg hover:shadow-purple-500/30 transition-shadow">
-            <div className="text-4xl mb-4 text-purple-400">⏱️</div>
-            <h3 className="text-xl font-semibold mb-2">Speed</h3>
-            <p className="text-gray-300 text-sm">
-              {`Speed excellence with our high-quality SMM services. As SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}
-            </p>
-          </div>
-
-          {/* Usability Card */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center border border-white/10 shadow-lg hover:shadow-purple-500/30 transition-shadow">
-            <div className="text-4xl mb-4 text-purple-400">👆</div>
-            <h3 className="text-xl font-semibold mb-2">Usability</h3>
-            <p className="text-gray-300 text-sm">
-              {`Usability excellence with our high-quality SMM services. As SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}
-            </p>
-          </div>
+      <div className="card-container2">
+        <div className="cards2">
+          <Image src={Section5} alt="section5" />
+          <h2>Quality</h2>
+          <p>
+          {`  Experience excellence with our high-quality SMM services. At SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}
+          </p>
         </div>
-     
+        <div className="cards2">
+          <Image src={Section5Img1} alt="sectionimg1" />
+          <h2>Affordability</h2>
+          <p>
+            {`Experience excellence with our high-quality SMM services. At SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}
+          </p>
+        </div>
+        <div className="cards2">
+          <Image src={Section5Img2} alt="sectionimg2" />
+          <h2>Speed</h2>
+          <p>
+         {`Experience excellence with our high-quality SMM services. At SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}
+          </p>
+        </div>
+        <div className="cards2">
+          <Image src={Section5Img3} alt="sectionimg3" />
+          <h2>Usability</h2>
+          <p>
+            {`Experience excellence with our high-quality SMM services. At SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
 
-
-    );
+  );
 };
 
 export default Benefits;

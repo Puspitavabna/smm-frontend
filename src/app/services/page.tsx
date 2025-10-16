@@ -2,133 +2,136 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "../../components/sections/Navbar";
 import Footer from "@/components/sections/Footer";
-import ToolSection from "@/components/sections/ToolSection";
+import Logo from '../assets/UHQ SMM.png';
+import HeroImage from '../../app/assets/heroImage.png'
+import Instagram2 from '../../app/assets/ist.png'
+import Snap2 from '../../app/assets/Snap2.png'
+import './Services.css'
+import Message from '../../app/assets/MessageService.png'
+import Tick from '../../app/assets/Tick.png'
+import Youtube from '../../app/assets/YoutubeService.png'
+import Export from '../../app/assets/ExportService.png'
+import Instagram from '../../app/assets/InstagramService.png'
+import Facebook from '../../app/assets/facebookService.png'
+import Inst2 from '../../app/assets/Instagram.png'
+import Snap3 from '../../app/assets/Snap.png'
+import Facebook2 from '../../app/assets/facebookService.png'
+import Youtube2 from '../../app/assets/youtube.png'
+import Linkedin2 from '../../app/assets/linkedin1.png'
+import X2 from '../../app/assets/x.png'
+import Ball from '../../app/assets/Ball.png'
+import Ball2 from '../../app/assets/Ball.png'
+import Boxes from '../../app/assets/Boxes1.png'
+import Youtube3 from '../../app/assets/youtube2.svg'
+import Ellipse25 from '../../app/assets/Ellipse25.png'
+import Red from '../../app/assets/Red.png'
 const Services = () => {
     return (
-        <>
-            <section className="text-white py-10 bg-gradient-to-b from-purple-900 via-black to-purple-900 relative overflow-hidden">
-                <div className="max-w-7xl mx-auto px-6">
-                    {/* Navbar */}
-                    <Navbar />
-
-
-                    {/* Shared Background for Content */}
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/10 shadow-lg pl-10 pr-10 pt-2 grid grid-cols-1 md:grid-cols-2 items-center gap-10 mt-5">
-                        {/* Left Content */}
-                        <div className="text-center md:text-left">
-                            <h1 className="text-4xl md:text-4xl font-extrabold mb-6 leading-tight">
-                                Full Suite of Digital  <br />Account Services
-                            </h1>
-                            <p className="text-gray-200 mb-8 text-lg">
-                                Take your social media to the next level with proven growth tools, authentic engagement, and a powerful online presence that sets you apart from the competition and drives real results.
-                            </p>
-                            {/* Buttons */}
-
-                        </div>
-
-                        {/* Right Image */}
-                        <div className="flex justify-center md:justify-end">
-                            <Image
-                                src="/monitor.png" // Update this path to your monitor image
-                                alt="SMM Dashboard"
-                                width={500}
-                                height={400}
-                                className="rounded-xl"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className="text-white py-10 bg-gradient-to-b from-purple-900 via-black to-purple-900 relative overflow-hidden">
-                <div className="max-w-7xl mx-auto px-6">
-                    {/* Navbar */}
-
-
-                    {/* Shared Background for Content */}
-                    <div className="pl-10 pr-10 pt-2 grid grid-cols-1 md:grid-cols-2 items-center gap-10 mt-5">
-                        {/* Left Content */}
-                        <div className="text-center md:text-left">
-                            <h1 className="text-4xl md:text-4xl font-extrabold mb-6 leading-tight">
-                                Inside UHQ Accounts
-                            </h1>
-                            <p className="text-gray-200 mb-8 text-lg justify-around text-gray-400">
-                                Take your social media to the next level with proven growth tools, authentic engagement, and a powerful online presence that sets you apart from the competition and drives real results.
-                            </p>
-                            {/* Buttons */}
-                            <div className="flex flex-col sm:flex-row items-center md:items-start gap-4">
-                                <button className="bg-purple-600 px-8 py-3 rounded-lg text-lg font-medium hover:bg-purple-700 transition-all shadow-lg hover:shadow-purple-500/30 w-full sm:w-auto">
-                                    Get Started
-                                </button>
-                                <button className="bg-gray-800/70 px-8 py-3 rounded-lg text-lg font-medium border border-purple-600 hover:bg-gray-700 transition-all w-full sm:w-auto">
-                                    View Services
-                                </button>
-                            </div>
-                            <p className="text-gray-200 mb-8 text-lg mt-3 text-gray-400">
-                                Take your social media to the next level with proven growth tools, authentic engagement, and a powerful online presence that sets you apart from the competition and drives real results.
-                            </p>
-                        </div>
-
-                        {/* Right Image */}
-                        <div className="flex justify-center md:justify-end">
-                            <Image
-                                src="/about.png" // Update this path to your monitor image
-                                alt="SMM Dashboard"
-                                width={500}
-                                height={400}
-                                className="rounded-xl"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div className="bg-gradient-to-b from-purple-900 to-black text-white p-10">
-                <h1 className="text-4xl font-bold text-center mb-4">Premium Social Media Accounts for Every Need</h1>
-                <p className="text-center mb-8 text-gray-300 ">
-                    {`Explore a curated selection of high-quality, aged, <br/>and verified social media accounts tailored for businesses, agencies, and individual creators.<br/> Whether you're scaling ad campaigns, automating growth, or building brand presence.`}
-                </p>
-                <div className="px-4 py-10 ">
-                    <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-                        {[
-                            {
-                                title: "Secure your digital identity",
-                                desc: "Verified accounts with clean history, goal for business registrations, outreach, and backups.",
-                            },
-                            {
-                                title: "TikTok Creator Accounts",
-                                desc: "Launch your next hit with active, high-performance TikTok accounts built for creators.",
-                            },
-                            {
-                                title: "YouTube Monetized Channels",
-                                desc: "Access channels eligible for monetization — perfect for content creators and ad revenue.",
-                            },
-                            {
-                                title: "Grow your influence instantly",
-                                desc: "Aged and verified Twitter accounts, perfect for networking, marketing, and building influence.",
-                            },
-                            {
-                                title: "Growth-Ready",
-                                desc: "Clean and aged accounts ideal for marketers, e-commerce brands, and influencers.",
-                            },
-                            {
-                                title: "Pages with Fans",
-                                desc: "Buy Facebook pages with established fanbases for branding, marketing, and outreach.",
-                            },
-                        ].map((card, i) => (
-                            <div
-                                key={i}
-                                className="bg-gray-800 w-full max-w-xs p-6 rounded-lg shadow-lg hover:shadow-purple-500/30 transition-shadow"
-                            >
-                                <h2 className="text-lg font-semibold mb-2 text-white">{card.title}</h2>
-                                <p className="text-gray-400 text-sm">{card.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
+        <div>
+            <Navbar />
+            <div className="services-logo1">
+                <Image src={Logo} alt="logo" />
             </div>
-            <ToolSection/>
-            <Footer />
-        </>
+            <Image src={Boxes} alt="" className='boxes' style={{ "position": "absolute", "top": "0", "width": "190px", zIndex: 0 }} />
+            <Image src={Ellipse25} alt="ellipse23" className='ellipse23' />
+            <div className='services-container'>
+                <div className="services-left">
+                    <h1>Full Suite of Digital Account Services</h1>
+                    <p>
+     {`                   From social media to email marketing accounts, we offer everything you need to boost visibility and results.`}</p>
+                </div>
+                <div className="services-right">
+
+                    <Image src={HeroImage} alt="heroImage" />
+                    <Image src={Instagram2} alt="instagram" className='insta' />
+                </div>
+                <Image src={Snap2} alt="snap2" />
+
+            </div >
+            <div className="services-section3">
+                <div className="services-content">
+                    <h1>Premium Social Media Accounts for Every Need</h1>
+                    <p>{`Explore a curated selection of high-quality, aged, and verified social media accounts tailored for businesses, agencies, and individual creators. Whether you're scaling ad campaigns, automating growth, or building brand presence, UHQ Accounts delivers secure, ready-to-use profiles for every platform. Enjoy instant delivery, safe transactions, and accounts optimized for performance and authenticity.`}</p>
+                </div>
+                <div className="servicescards-container">
+                    <div className="services-cards">
+                        <div className="image">
+                            <Image src={Message} alt="" />
+                        </div>
+                        <h1>Secure your digital identity</h1>
+                        <p>{`Verified Gmail accounts with clean history, great for business registrations, outreach, and backups.`}</p>
+                    </div>
+                    <div className="services-cards">
+                        <div className="image">
+                            <Image src={Tick} alt="" />
+                        </div>
+                        <h1>TikTok Creator Accounts</h1>
+                        <p>{`Launch your next viral ad with active, high-reach TikTok accounts built for performance.`}</p>
+                    </div>
+                    <div className="services-cards">
+                        <div className="image">
+                            <Image src={Youtube} alt="" />
+                        </div>
+                        <h1>  YouTube Monetized Channels</h1>
+                        <p>{`Access channels eligible for monetization — perfect for content creators and ad revenue.`}</p>
+                    </div>
+                    <div className="services-cards">
+                        <div className="image">
+                            <Image src={Export} alt="" />
+                        </div>
+                        <h1> Grow your influence instantly</h1>
+                        <p>{`Aged and verified Twitter accounts, perfect for marketing, automation, and digital networking`}</p>
+                    </div>
+                    <div className="services-cards">
+                        <div className="image">
+                            <Image src={Instagram} alt="" />
+                        </div>
+                        <h1> Growth-Ready</h1>
+                        <p>{`Clean and aged IG accounts ideal for influencers, eCommerce brands, and marketers.`}</p>
+                    </div>
+                    <div className="services-cards">
+                        <div className="image">
+                            <Image src={Facebook} alt="" />
+                        </div>
+                        <h1>Pages with Fans</h1>
+                        <p>{`Buy Facebook pages with real audiences for marketing, memes, or business branding.`}</p>
+                    </div>
+                </div>
+            </div>
+            <div className="section7">
+                <h2 className='head'>Our Platforms</h2>
+                <div className="section7-content">
+                    <div className="social-grid">
+                        <Image className='section7-img' src={Inst2} alt="Instagram" />
+                        <Image className='section7-img' src={Snap3} alt="Snapchat" />
+                        <Image className='section7-img' src={Facebook2} alt="Facebook" />
+                        <Image className='section7-img' src={Youtube2} alt="YouTube" />
+                        <Image className='section7-img' src={Linkedin2} alt="LinkedIn" />
+                        <Image className='section7-img' src={X2} alt="X" />
+                        <Image src={Ball2} alt="" className='ball' />
+                    </div>
+                    <div className="text-content">
+                        <button className="services-button">OUR Services</button>
+                        <Image src={Youtube3} alt="youtube2" className='service-youtube2' />
+                        <h1 className='head'>Explore Our Most Popular SMM Tools</h1>
+                        <p className='para'>
+                            At SMM VIP, we pride ourselves on delivering top-tier Social Media Marketing (SMM)
+                            services designed to elevate your online presence and drive unparalleled engagement.
+                            With our comprehensive suite of solutions, we empower businesses of all sizes to
+                            harness the full potential of social media platforms.
+                        </p>
+                        <Image src={Ball} alt="" className='ball1' />
+                        <div className="gradient-button-wrapper2">
+                            <button className="seeallourservices">See All Our Services</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* <img src={Ball3} alt="" className='ball3'/>
+       <img src={Ball4} alt=""   className='ball4'/> */}
+            <Image src={Red} alt="red" className='red2' />
+        <Footer />
+        </div>
 
     );
 };

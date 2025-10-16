@@ -1,25 +1,28 @@
 import React from "react";
-
+import Image from "next/image";
+import facebook2 from "../../app/assets/facebook2.png";
 const StatsSection = () => {
-    const stats = [
-        { value: "89.2K+", label: "Influencers" },
-        { value: "700+", label: "Quality Leads" },
-        { value: "30.1K+", label: "Trusted Customers" },
-    ];
+
 
     return (
-        <section className="bg-gradient-to-b from-purple-900 via-black to-purple-900 py-16 text-white">
-            <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-700 text-center">
-                {stats.map((stat, idx) => (
-                    <div key={idx} className="py-6 md:py-0 md:px-6">
-                        <h2 className="text-3xl md:text-4xl font-bold text-purple-500">
-                            {stat.value}
-                        </h2>
-                        <p className="text-gray-400 mt-2">{stat.label}</p>
+          <div className="section2-container">
+                <div className="section2">
+                    <div className="heading1">
+                        <p className="number">89,2K+</p>
+                        <p className="label">In Revenue</p>
                     </div>
-                ))}
+                    <div className="heading1">
+                        <p className="number">7001+</p>
+                        <p className="label">Qualified Leads</p>
+                    </div>
+                    <div className="heading1">
+                        <p className="number">30,124+</p>
+                        <p className="label">Trusted Customers</p>
+                    </div>
+                </div>
+                <Image src={facebook2} alt="facebook" className="facebook-img" />
             </div>
-        </section>
+
 
     );
 };

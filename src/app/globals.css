@@ -122,6 +122,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
     background-color: var(--background);
@@ -130,6 +131,7 @@
 }
 
 @layer utilities {
+
   /* Force solid background color only */
   .bg-solid {
     background-image: none !important;
@@ -143,6 +145,7 @@
     background-attachment: fixed;
     background-size: cover;
   }
+
   .gradient {
     @apply bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent;
   }
@@ -208,4 +211,12 @@ html {
 .card-hover:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.frontend-body {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  background: black;
+  color: white;
 }
