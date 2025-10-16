@@ -10,6 +10,7 @@ import FcSection from "@/components/sections/FcSection";
 import Footer from "@/components/sections/Footer";
 
 export default function Home() {
+  
   return (
     <main className="min-h-screen bg-black">
       <HeroSection />
