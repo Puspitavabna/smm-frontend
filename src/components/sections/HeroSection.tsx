@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,7 +6,6 @@ import HeroImage from '../../app/assets/heroImage.png'
 import Instagram2 from '../../app/assets/ist.png'
 import Snap2 from '../../app/assets/Snap2.png'
 import Linkedin2 from '../../app/assets/linkedin2.png'
-import Navbar from "./Navbar";
 // import Snap from '../../app/assets/snap.png'
 import Logo from '../../app/assets/UHQ SMM.png';
 // import Layer from '../../app/assets/Layer_1.png'
@@ -15,7 +15,7 @@ import Ellipse25 from '../../app/assets/Ellipse25.png'
 const HeroSection = () => {
     return (
         <>
-        <Navbar/>
+        {/* <Navbar/> */}
             <div className="logo1">
                 <Image src={Logo} alt="logo" />
             </div>

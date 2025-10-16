@@ -188,10 +188,10 @@ const Navbar = () => {
             {/* Original elements (hidden below 480px) */}
             <div className="desktop-ellipses">
                 <div className='ellipse'>
-                    <Image src={Ellipse} alt="ellipse" />
+                    <Image src={Ellipse} alt="ellipse" width={55} height={60} />
                 </div>
                 <div className='ellipse1'>
-                    <Image src={Ellipse1} alt="ellipse1" />
+                    <Image src={Ellipse1} alt="ellipse1" width={55} height={60}  />
                 </div>
             </div>
 
