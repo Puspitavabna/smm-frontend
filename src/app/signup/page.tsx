@@ -195,7 +195,7 @@ export default function SignupPage() {
                 </div>
                 <button type="submit" className="signup-button">Sign up</button>
                 <p className="signin-link">
-                    Already have an account? <Link href='/login' className='signin-anchor'>Sign in</Link>
+                    Already have an account? <Link href='/signin' className='signin-anchor'>Sign in</Link>
                 </p>
             </form>
             <Image src={Boxes} alt="boxes" className='boxes' style={{ position: 'absolute', top: 0, width: '190px', zIndex: 0 }} />
