@@ -220,3 +220,17 @@ html {
   background: black;
   color: white;
 }
+.bg-hero {
+  position: relative;
+  background-image: url('/desktop.png');
+  background-size: cover; /* cover the entire div */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px; /* initial height */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem; /* match rounded-2xl */
+  overflow: hidden;
+}

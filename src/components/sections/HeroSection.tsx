@@ -10,49 +10,67 @@ import Navbar from "./Navbar";
 import Logo from '../../app/assets/UHQ SMM.png';
 // import Layer from '../../app/assets/Layer_1.png'
 import './HeroSection.css'
+import '../../app/globals.css'
+
 import Boxes1 from '../../app/assets/Boxes1.png'
 import Ellipse25 from '../../app/assets/Ellipse25.png'
 const HeroSection = () => {
     return (
         <>
-        <Navbar/>
-            <div className="logo1">
-                <Image src={Logo} alt="logo" />
-            </div>
-            <div className='home-container'>
-                <div className="left">
-                    <h1>Boost Your Social Media Presence</h1>
-                    <p>
-                        Take your social media to the next level with proven growth tools, authentic and powerful engagement, and an online presence that sets you apart from the competition and drives results.
-                    </p>
-                    <Image src={Linkedin2} alt="linkedin2" />
-                    <div className="button">
-                        <Link href='/login'>
-                            <div>
-                                <button className='create-account1'>Get Started</button>
-                            </div>
-                        </Link>
-                        <Link href='/services'>
-                            <div className="gradient-button-wrapper1">
+            <section className="relative text-white py-10 overflow-hidden bg-gradient-to-r from-[#1c0c3f] to-[#0f0f2f]">
+                <div className="max-w-7xl mx-auto px-6">
+                    {/* Navbar */}
+                    <Navbar />
 
-                                <button className="get-discount1">View Services</button>
+                    {/* Hero Content with hero shape */}
+                    <div className="bg-hero border border-white/10 shadow-lg pl-10 pr-10 pt-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10 mt-5 backdrop-blur-sm relative">
 
+                        {/* Logo at top-left */}
+                        <div className="absolute top-6 left-6 text-2xl font-bold text-purple-500 z-10">
+                            UHQ <span className="text-white">SMM</span>
+                        </div>
+
+                        {/* Left Content */}
+                        <div className="text-center md:text-left">
+                            <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+                                Boost Your <span className="text-purple-500">Social Media</span> Presence
+                            </h1>
+                            <p className="text-gray-200 mb-8 text-lg">
+                                Take your social media to the next level with proven growth tools,
+                                authentic engagement, and a powerful online presence that sets you apart
+                                from the competition and drives real results.
+                            </p>
+
+                            {/* Buttons */}
+                            <div className="flex flex-col sm:flex-row items-center md:items-start gap-4">
+                                <button className="bg-purple-600 px-8 py-3 rounded-lg text-lg font-medium hover:bg-purple-700 transition-all shadow-lg hover:shadow-purple-500/30 w-full sm:w-auto">
+                                    Get Started
+                                </button>
+                                <button className="bg-gray-800/70 px-8 py-3 rounded-lg text-lg font-medium border border-purple-600 hover:bg-gray-700 transition-all w-full sm:w-auto">
+                                    View Services
+                                </button>
                             </div>
-                        </Link>
+                        </div>
+
+                        {/* Right Image */}
+                        <div className="flex justify-center md:justify-end">
+                            <Image
+                                src="/monitor.png"
+                                alt="SMM Dashboard"
+                                width={500}
+                                height={400}
+                                className="rounded-xl"
+                            />
+                        </div>
+
                     </div>
-
-
                 </div>
-                <div className="right">
+            </section>
 
-                    <Image src={HeroImage} alt="heroImage" />
-                    <Image src={Instagram2} alt="instagram" className='insta' />
-                </div>
-                <Image src={Snap2} alt="snap2" />
-            </div >
-            <Image src={Boxes1} alt="boxes" className='boxes' style={{ position: 'absolute', zIndex: 0 }} />
-            <Image src={Ellipse25} alt="ellipse23" className='ellipse23' style={{ "display": "block" }} />
-      </>
+
+
+
+        </>
     );
 };
 
