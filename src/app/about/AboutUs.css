@@ -427,6 +427,7 @@ footer {
 @media (max-width: 768px) {
   .about-container {
      padding: 130px 20px;
+     margin-top:70px
   }
 
 

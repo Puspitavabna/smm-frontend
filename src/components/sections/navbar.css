@@ -65,6 +65,7 @@
 .ellipse img,
 .ellipse1 img {
   height: 40px;
+  width:46px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -85,6 +86,7 @@
   box-shadow: 0px 0px 10px #ff00ff5c;
   transition: 0.3s ease;
 }
+
 .register button {
   background: linear-gradient(354.17deg, #7129FF 3.91%, #FD00E3 72.59%);
   border: none;
@@ -102,7 +104,7 @@
   box-shadow: 0px 0px 20px #ff00ff91;
 }
 .nav {
-  margin-left: 340px; 
+  margin-left: 385px; 
   /* Adjust as needed */
   z-index: 1;
 }
@@ -236,6 +238,7 @@
   
   .desktop-register {
     display: block;
+    margin-right: -65px;
   }
 }
 

@@ -23,6 +23,9 @@
 
 .contact-logo1 {
   margin-left: 100px;
+  margin-top:-60px;
+  position:absolute;
+  z-index: 1;
   /* margin-bottom: 10px; */
 }
 
@@ -464,6 +467,7 @@
 @media (max-width: 480px) {
   .contact-container{
     min-height: 0px;
+    margin-top: 72px;
     flex-direction: column;
   }
   .contact-left h1 {
