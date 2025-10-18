@@ -122,26 +122,30 @@
 /* Responsive for tablets */
 @media (max-width: 1024px) {
   .container {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* ensures items align to left */
     align-items: center;
     gap: 20px;
     padding: 20px;
   }
-   .nav {
-  margin-left: 0px; 
-}
+
+  .nav {
+    margin-left: 300px; /* adjusts nav position */
+  }
 
   .ellipses {
     transform: none;
     justify-content: center;
-    /* margin-right: 0px; */
   }
 
-  .register {
-    margin-top: 15px;
+  .desktop-register {
+    margin-left: auto; /* reset any right alignment */
+    margin-right: 0; /* pushes it left */
+    /* optional: move it before others in flex order */
   }
- 
 }
+
 
 /* Responsive for mobile */
 
@@ -242,7 +246,7 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .hamburger {
     display: block;
     position: absolute;
@@ -273,7 +277,12 @@
     margin-top: 15px;
   }
 
- 
+  /* Hide desktop ellipses and register */
+  .desktop-ellipses,
+  .desktop-register {
+    display: none !important;
+    visibility: hidden;
+  }
 
   /* Ensure register button stays centered inside hamburger */
   .desktop-register button {
