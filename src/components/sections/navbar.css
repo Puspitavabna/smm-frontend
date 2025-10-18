@@ -117,7 +117,11 @@
   width: 100%;
   height: 100%;
 }
-
+ 
+  .desktop-register {
+    display: block;
+    margin-right: -65px;
+  }
 
 /* Responsive for tablets */
 @media (max-width: 1024px) {
@@ -240,10 +244,10 @@
     /* transform: translateX(70px); */
   }
   
-  .desktop-register {
+  /* .desktop-register {
     display: block;
     margin-right: -65px;
-  }
+  } */
 }
 
 @media (max-width: 768px) {

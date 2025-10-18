@@ -342,18 +342,15 @@
   .home-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* center content horizontally */
-    justify-content: flex-start;
-    padding: 30px 20px; /* smaller padding for small screens */
+    align-items: flex-start; /* center content horizontally */
+     padding: 40px 60px;/* smaller padding for small screens */
     background-image: url('../../app/assets/mobile.png');
     background-repeat: no-repeat;
-    background-size: cover; /* ensures background fills container */
-    background-position: center top; /* positions the image at top center */
+    background-position: 0px 30px; /* positions the image at top center */
     min-height: 80vh;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    z-index: 1;
+    width: 92%;
+    max-width: 98%;
+    margin: auto;
   }
 
   /* Optional: logo adjustment for mobile */
